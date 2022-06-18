@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(82, 82, 82);
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e'
+    
+    
+    ;
+    gap: 10px;
+    
+
+}
+
+main{
+    width: 40%;
+    margin: auto;
+}
+
+main div{
+    padding: 2em;
+    text-align: center;
+    border-radius: 2px;
+}
+
+
+.item-a{
+    background-color: rgb(230, 86, 3);
+    grid-area: a;
+    height: 100px;
+
+}
+
+.item-b{
+    background-color: rgb(230, 176, 14);
+    grid-area: b;
+}
+
+.item-c{
+    background-color: rgb(15, 197, 88);
+    grid-area: c;
+}
+
+.item-d{
+    background-color: rgb(52, 182, 218);
+    grid-area: d;
+}
+
+.item-e{
+    background-color: rgb(52, 182, 218);
+    grid-area: e;
+    
+}
+
+.top-button{
+    padding-bottom: 40px;
+    margin-left: 150px;
+
+ }
+ 
+ .button1{
+     width: 35%;
+     height: 30px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     
+ }
+ 
+ .button1:hover{
+     background: hsl(179, 100%, 13%);
+     color: white;
+ }
+ 
+ .button2{
+     width: 35%;
+     height: 30px;
+     border-radius: 5px;
+     margin-left: 15px;
+     cursor: pointer;
+     
+ }
+ 
+ .button2:hover{
+     background: hsl(31, 77%, 52%);
+     color: white;
+ }
+
+ @media (max-width: 421px) and (min-width: 375px) {
+
+    .top-button{
+      display: none;
+   }
+   
+   .button1{
+    display: none;
+   
+  }
+  
+    .button2{
+        display: none;
+  
+    }
+  }
+  
+  @media (max-width: 899px) {
+  
+    .top-button{
+      display: none;
+      
+   }
+   
+   .button1{
+   display: none; 
+   
+  }
+  
+    .button2{
+      display: none;
+    }
+  }
